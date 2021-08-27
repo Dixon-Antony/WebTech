@@ -1,0 +1,238 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing : border-box;
+	font-family : system-ui;
+	letter-spacing: 0.5px; 
+}
+
+body{
+	background-image: url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nav-area{
+	text-align: center;
+	list-style: none;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 3px;
+}
+
+.nav-area li{
+	display: inline-block;
+	padding: 0 15px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.nav-area li:hover{
+	transition: 0.3s;
+	color: darkorange;
+}
+
+.nav-area .current{
+	color: darkorange;
+}
+
+.container{
+	display: flex;
+	flex-wrap : wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.car-image{
+	max-height: 200px;
+
+}
+
+.cars{
+	background: white;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+	max-width: 300px;
+	min-height: 320px;
+	text-align: center;
+	border-radius: 1rem;
+	margin: 2rem;
+	transition: 0.3s;
+
+}
+.cars:hover{
+	transform: scale(1.1);
+	background: black;
+	color: white;
+}
+
+.search{
+	margin: auto;
+	margin-top: 2%;
+	position: relative;
+	width: 500px;
+	height: auto;
+	border: 2px solid whitesmoke;
+	padding-left:10px;
+	border-radius: 50px;
+}
+.search:hover{
+	border-color: aquamarine;
+}
+
+.elements{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.searchbox{
+	border: none;
+	border-radius:50px;
+	background: transparent;
+	width: 100%;
+	height: 50px;
+	padding: 0px 5px;
+	font-size: 20px;
+	color: white;	
+}
+
+.searchbox:focus{
+	outline: none;
+}
+
+
+
+.searchicon:hover{
+	transform: scale(0.9);
+}
+
+.add{
+	text-align: center;
+}
+
+.addButton{
+	text-transform: uppercase;
+	color: darkorange;
+	background-color: #191B25;
+	letter-spacing: 3px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 10px 10px;
+	border: 1px solid darkorange;
+	text-decoration: none;
+	outline: none;
+	font-family: 'Lexend Tera', sans-serif;
+}
+
+.addButton:hover{
+	letter-spacing: 5px;
+	transition:0.5s;
+	color: #191B25;
+	background-color: darkorange;
+	text-decoration: none;
+	outline: none;
+}
+
+.del{
+	text-transform: uppercase;
+	color: crimson;
+	background-color: white;
+	letter-spacing: 3px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 10px 10px;
+	border: 1px solid crimson;
+	text-decoration: none;
+	outline: none;
+	font-family: 'Lexend Tera', sans-serif;
+
+
+}
+
+.del:hover{
+		letter-spacing: 5px;
+		transition:0.5s;
+		color: white;
+		background-color: crimson;
+		text-decoration: none;
+		outline: none;
+}
+
+.cars:hover .del{
+	background-color: black;
+}
+
+.cars:hover .del:hover{
+	background-color: crimson;
+}
+
+.approve{
+	margin-top: 2%;
+	text-transform: uppercase;
+	color: green;
+	background-color: white;
+	letter-spacing: 3px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 10px 10px;
+	border: 1px solid green;
+	text-decoration: none;
+	outline: none;
+	font-family: 'Lexend Tera', sans-serif;
+
+}
+
+.approve:hover{
+		letter-spacing: 5px;
+		transition:0.5s;
+		color: white;
+		background-color: green;
+		text-decoration: none;
+		outline: none;
+}
+
+.cars:hover .approve{
+	background-color: black;
+}
+
+.cars:hover .approve:hover{
+	background-color: green;
+}
+
+#more{
+	display: none;
+}
+
+#myBtn{
+	text-transform: uppercase;
+	color: darkorange;
+	background-color: white;
+	letter-spacing: 3px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 10px 10px;
+	border: 1px solid darkorange;
+	text-decoration: none;
+	outline: none;
+	font-family: 'Lexend Tera', sans-serif;
+}
+
+#myBtn:hover{
+	letter-spacing: 5px;
+	transition:0.5s;
+	color: black;
+	background-color: darkorange;
+	text-decoration: none;
+	outline: none;
+}
+
+.cars:hover #myBtn{
+	background-color: black;
+}
+
+.cars:hover #myBtn:hover{
+	background-color: darkorange;
+}
