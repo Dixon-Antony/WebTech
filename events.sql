@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 17, 2021 at 07:27 PM
+-- Generation Time: Dec 18, 2021 at 06:37 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -44,9 +44,8 @@ INSERT INTO `registered` (`reg_id`, `user_id`, `reg_no`, `candidate`, `eventName
 (12, 21, '19IT025', 'Dixon', 'AI and ML', 'webinars'),
 (13, 23, '19IT101', 'Sreesh', 'AI and ML', 'webinars'),
 (14, 22, '19IT073', 'Ragul', 'AI and ML', 'webinars'),
-(15, 24, '19It001', 'testuser', 'AI and ML', 'webinars'),
-(16, 24, '19IT001', 'testuser', 'Blockchain', 'webinars'),
-(17, 24, '19IT001', 'testuser', 'Python', 'workshops');
+(28, 21, '19IT025', 'Dixon', 'Python', 'workshops'),
+(29, 21, '19IT025', 'Dixon', 'Blockchain', 'webinars');
 
 -- --------------------------------------------------------
 
@@ -72,10 +71,8 @@ INSERT INTO `users` (`id`, `type`, `name`, `reg_no`, `email`, `password`) VALUES
 (21, 'student', 'Dixon', '19IT025', 'dixon@student.tce.edu', 'dixon123'),
 (22, 'student', 'Ragul', '19IT073', 'ragul@student.tce.edu', 'ragul123'),
 (23, 'student', 'Sreesh', '19IT101', 'sreesh@student.tce.edu', 'sreesh123'),
-(24, 'student', 'testuser', '19IT001', 'testuser@student.tce.edu', '12345678'),
-(25, 'faculty', 'dxn', '1234', 'dxn@student.tce.edu', 'dxn123'),
-(27, 'faculty', 'Mr.Karthikeyan', '111', 'karthikeyan@gmail.com', 'karthikeyan123'),
-(28, 'faculty', 'Ms.Abirammi', '222', 'abirammi@gmail.com', 'abirammi123');
+(27, 'faculty', 'Dr. P.Karthikeyan', '111', 'karthikeyan@gmail.com', 'karthikeyan123'),
+(28, 'faculty', 'Dr. A.M.Abirami', '222', 'abiramiam@gmail.com', 'abirami123');
 
 -- --------------------------------------------------------
 
@@ -164,7 +161,7 @@ ALTER TABLE `workshops`
 -- AUTO_INCREMENT for table `registered`
 --
 ALTER TABLE `registered`
-  MODIFY `reg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `reg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -182,7 +179,7 @@ ALTER TABLE `webinars`
 -- AUTO_INCREMENT for table `workshops`
 --
 ALTER TABLE `workshops`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
